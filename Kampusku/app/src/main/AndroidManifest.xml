@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.kampusku">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Tema2">
+        <activity android:name=".updatedata"
+            android:label="Update Data"
+            android:theme="@style/Tema1"
+            android:parentActivityName=".updatedata" />
+        <activity android:name=".detaildata"
+            android:label="Detail Data"
+            android:theme="@style/Tema1"
+            android:parentActivityName=".detaildata"/>
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Dashboard"
+            android:theme="@style/Tema1" />
+        <activity
+            android:name=".datamahasiswa"
+            android:label="Data Mahasiswa"
+            android:parentActivityName=".datamahasiswa"
+            android:theme="@style/Tema1" />
+        <activity
+            android:name=".informasi"
+            android:label="Tentang Aplikasi"
+            android:parentActivityName=".informasi"
+            android:theme="@style/Tema1" />
+        <activity
+            android:name=".inputdata"
+            android:label="Input Data"
+            android:parentActivityName=".inputdata"
+            android:theme="@style/Tema1" />
+
+    </application>
+
+</manifest>
